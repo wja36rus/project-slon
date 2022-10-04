@@ -1,0 +1,28 @@
+@import "settings";
+
+.title {
+  color: @dark;
+  text-align: center;
+
+  .big-title {
+    font-weight: bold;
+    font-size: @primary-size * 6;
+    line-height: @primary-size * 6;
+  }
+
+  .small-title {
+    font-size: @primary-size * 3;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 991px) {
+    .big-title {
+      font-size: @primary-size * 3.5;
+      line-height: @primary-size * 3.5;
+    }
+
+    .small-title {
+      font-size: @primary-size * 1.7;
+    }
+  }
+}

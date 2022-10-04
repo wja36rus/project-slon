@@ -1,0 +1,14 @@
+.news .news-title {
+  font-size: 30px;
+  font-weight: bold;
+  height: 50px;
+  padding: 10px;
+}
+.news .news-text {
+  font-size: 18px;
+  padding: 10px;
+}
+.news .blog-card {
+  background: white;
+}
+/*# sourceMappingURL=news.css.map */

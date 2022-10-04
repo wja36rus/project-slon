@@ -1,0 +1,93 @@
+@import "settings";
+
+.home {
+  height: 100vh;
+
+  .item-1 {
+    background-image: url("../images/home/home1.jpg");
+    height: 100vh;
+    background-size: cover;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: .8rem;
+    height: .8rem;
+  }
+
+  .home-about {
+    width: 46rem;
+  }
+
+  h1 {
+    font-size: @primary-size * 7.5;
+    color: @light;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: @primary-size * 3;
+    color: @light;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: @primary-size * 2.5;
+    color: @light;
+  }
+
+  .btn-white {
+    font-size: @primary-size * 2;
+    color: @dark;
+    background: @white;
+    border-radius: 2rem;
+    border: 1px solid @dark;
+    padding: 15px 40px 15px 40px;
+  }
+
+  @media screen and (max-width: 991px) {
+    h1 {
+      font-size: @primary-size * 4;
+      color: @light;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: @primary-size * 2.5;
+      color: @light;
+      font-weight: bold;
+    }
+
+    h4 {
+      font-size: @primary-size * 2.5;
+      color: @light;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 100% !important;
+      margin: 0 auto;
+    }
+
+    .ms-5 {
+      margin: 0 !important;
+    }
+
+    .home-about {
+      width: 100%;
+    }
+
+    .btn-white {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    h1 {
+      font-size: @primary-size * 3;
+      color: @light;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import "settings";
+
+form {
+  width: 50%;
+  margin: 0 auto;
+
+  h1 {
+    color: @dark;
+  }
+
+  h2 {
+    color: @dark;
+  }
+
+  .form-input {
+    height: 50px;
+    border: 1px solid @dark;
+    margin-bottom: 1rem;
+    color: @dark;
+    font-size: @primary-size * 2;
+  }
+
+  .form-text {
+    border: 1px solid @dark;
+    margin-bottom: 1rem;
+    color: @dark;
+    font-size: @primary-size * 2;
+  }
+
+  small {
+    color: @dark;
+    text-align: center;
+  }
+
+  .btn-form {
+    background: #665653;
+    color: #ffffff;
+    font-size: 18px;
+    display: block;
+    padding: 10px 30px 10px 30px;
+    border-radius: 2rem;
+    border: none;
+    margin: 1rem auto 0;
+  }
+
+  @media screen and (max-width: 1199px) {
+    width: 43%;
+  }
+}
+
+
+.left-form {
+  width: 31rem;
+}
+
+@media screen and (max-width: 991px) {
+  form {
+    width: 100%;
+  }
+
+  .left-form {
+    display: none;
+  }
+}

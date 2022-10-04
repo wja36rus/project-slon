@@ -1,0 +1,15 @@
+.service .cards {
+  width: 50%;
+  background: white;
+  padding: 10px;
+  color: #665653;
+}
+.service .cards-title {
+  font-size: 27px;
+  font-weight: bold;
+}
+.service .cards-text {
+  font-size: 18px;
+  padding: 10px;
+}
+/*# sourceMappingURL=service.css.map */

@@ -1,0 +1,165 @@
+@import "settings";
+
+header {
+  background: @light;
+  box-shadow: @shadow-small;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  .logo {
+    font-size: @primary-size * 2.5;
+    line-height: @primary-size * 3;
+    color: @dark;
+    margin: 5px 0 5px 0;
+  }
+
+  .connect {
+    font-size: @primary-size * 2;
+    text-decoration: none;
+    color: @dark;
+  }
+
+  .connect-hover:hover {
+    color: @dark;
+    text-decoration: underline;
+  }
+
+  .btn-outline {
+    width: 220px;
+    height: 51px;
+    border: 1px solid #665653;
+    color: #665653;
+    background: transparent;
+    font-size: @primary-size * 1.6;
+    transition: .5s;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .btn-outline:hover {
+    background: @dark;
+    color: @white;
+    transition: .5s;
+  }
+
+  .burger {
+    margin: auto 0 auto 0;
+    transition: .5s;
+    display: none;
+  }
+
+  .burger:hover {
+    cursor: pointer;
+    opacity: .8;
+    transition: .5s;
+  }
+
+  .view1100 {
+    display: none;
+  }
+
+  .logo-image {
+    width: 3.5rem;
+  }
+
+  nav {
+    display: flex;
+    padding-top: 10px;
+
+    .nav-item {
+      color: @dark;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: @primary-size*1.85;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    .header {
+      max-width: 100% !important;
+    }
+  }
+
+  @media screen and (max-width: 1110px) {
+    .burger {
+      display: block !important;
+    }
+
+    .header nav {
+      display: none !important;
+    }
+
+    .logo {
+      font-size: @primary-size * 2;
+      line-height: @primary-size * 2;
+    }
+
+    .logo-image {
+      width: 3.5rem;
+    }
+
+    .d-none1100 {
+      display: none !important;
+    }
+
+    .view1100 {
+      display: unset !important;
+    }
+
+    .ms-auto1100 {
+      margin-left: auto !important;
+    }
+  }
+  @media screen and (max-width: 786px) {
+    .btn-outline {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 570px) {
+    .burger {
+      margin-left: auto;
+    }
+
+    .d-none550 {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .logo {
+      font-size: 15px;
+    }
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  background: white;
+  display: grid;
+  width: 19rem;
+  z-index: 999999;
+  top: 0;
+  right: 0;
+  transition: .5s;
+  transform: translateX(100%);
+}
+
+.mobile-menu.active {
+  transition: .5s;
+  transform: translateX(0%);
+}
+
+.mobile-menu nav {
+  display: grid;
+  padding: 16px;
+  align-content: space-evenly;
+  line-height: 2rem;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
