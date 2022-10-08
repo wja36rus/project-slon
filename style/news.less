@@ -4,7 +4,8 @@
   .news-title {
     font-size: @primary-size * 3;
     font-weight: bold;
-    height: 50px;
+    line-height: 29px;
+    min-height: 6rem;
     padding: 10px;
     color: @dark;
   }
@@ -23,7 +24,23 @@
   .card-href {
     text-decoration: none;
     display: block;
-    width: 17rem;
+    width: 25rem;
     margin: 0 auto 2rem;
+    max-height: 42rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .card-href::after {
+    content: "Читать далее...";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+    color: black;
+    font-size: 18px;
+    background: white;
+    box-shadow: 0px -4px 5px 2px white;
+    margin-left: 10px;
   }
 }

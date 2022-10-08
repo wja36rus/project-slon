@@ -171,6 +171,16 @@ header nav .nav-item {
   height: 100vh;
   background-size: cover;
 }
+.home .item-2 {
+  background-image: url("../images/home/home2.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.home .item-3 {
+  background-image: url("../images/home/home3.jpg");
+  height: 100vh;
+  background-size: cover;
+}
 .home .carousel-indicators [data-bs-target] {
   border-radius: 50%;
   width: 0.8rem;
@@ -200,6 +210,7 @@ header nav .nav-item {
   border-radius: 2rem;
   border: 1px solid #665653;
   padding: 15px 40px 15px 40px;
+  margin-bottom: 8rem;
 }
 @media screen and (max-width: 991px) {
   .home h1 {
@@ -336,28 +347,21 @@ header nav .nav-item {
   margin: 0 auto;
 }
 .cases .cases-title {
-  font-size: 18px;
+  font-size: 22.5px;
   font-style: italic;
   padding: 10px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 1rem;
   color: #665653;
+  font-weight: bold;
 }
 .cases .cases-text {
   padding: 10px;
-  font-size: 15.3px;
+  font-size: 18px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #665653;
-  text-align: justify;
-}
-.cases .cases-last {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
+  min-height: 9rem;
 }
 .cases .btn-cases {
   background: #665653;
@@ -397,6 +401,12 @@ header nav .nav-item {
     width: 20rem;
   }
 }
+.carousel-control-next {
+  filter: invert(1);
+}
+.carousel-control-prev {
+  filter: invert(1);
+}
 .partners .card-partner {
   margin: 0 auto;
   min-height: 22rem;
@@ -408,12 +418,6 @@ header nav .nav-item {
 }
 .partners .img-partner {
   width: 14rem;
-}
-.partners .carousel-control-prev-icon {
-  filter: invert(1) !important;
-}
-.partners .carousel-control-next-icon {
-  filter: invert(1) !important;
 }
 .partners .card-partner-title {
   text-align: center;
@@ -434,7 +438,8 @@ header nav .nav-item {
 .news .news-title {
   font-size: 27px;
   font-weight: bold;
-  height: 50px;
+  line-height: 29px;
+  min-height: 6rem;
   padding: 10px;
   color: #665653;
 }
@@ -450,8 +455,23 @@ header nav .nav-item {
 .news .card-href {
   text-decoration: none;
   display: block;
-  width: 17rem;
+  width: 25rem;
   margin: 0 auto 2rem;
+  max-height: 42rem;
+  overflow: hidden;
+  position: relative;
+}
+.news .card-href::after {
+  content: "Читать далее...";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 9;
+  color: black;
+  font-size: 18px;
+  background: white;
+  box-shadow: 0px -4px 5px 2px white;
+  margin-left: 10px;
 }
 form {
   width: 50%;
