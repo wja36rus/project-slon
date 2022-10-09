@@ -20,4 +20,12 @@ $(document).ready(function () {
         $('html,body').stop().animate({ scrollTop: $(e.target.hash).offset().top - header }, 500);
         e.preventDefault();
       });
+
+    $(".btn-white, .btn-outline, .btn-service").on("click", function () {
+        $('.out-form').addClass("active");
+    });
+
+    $(".close-form").on("click", function () {
+        $('.out-form').removeClass("active");
+    });
 });

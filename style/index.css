@@ -538,4 +538,45 @@ footer .footer {
     margin: 0 auto;
   }
 }
+.out-form {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #000000cf;
+  top: 0;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+.out-form .btn-white {
+  background: #665653;
+  color: #ffffff;
+  font-size: 16.2px;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 30px 10px 30px;
+  border-radius: 2rem;
+  border: none;
+}
+.out-form .inset-form {
+  width: 280px;
+  background: white;
+  padding: 10px;
+}
+.out-form .close-form {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  width: 2rem;
+}
+.out-form .close-form:hover {
+  cursor: pointer;
+}
+.out-form.active {
+  z-index: 999999;
+  opacity: 1;
+  transition: 0.5s;
+}
 /*# sourceMappingURL=index.css.map */
