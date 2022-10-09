@@ -212,6 +212,23 @@ header nav .nav-item {
   padding: 15px 40px 15px 40px;
   margin-bottom: 8rem;
 }
+.home .yes810 {
+  display: none;
+}
+@media screen and (max-width: 1399px) {
+  .home .item-1 {
+    background-image: url("../images/home/home1-1399.jpg");
+    background-position: center;
+  }
+  .home .item-2 {
+    background-image: url("../images/home/home2-1399.jpg");
+    background-position: center;
+  }
+  .home .item-3 {
+    background-image: url("../images/home/home3-1399.jpg");
+    background-position: center;
+  }
+}
 @media screen and (max-width: 991px) {
   .home h1 {
     font-size: 36px;
@@ -226,6 +243,23 @@ header nav .nav-item {
   .home h4 {
     font-size: 22.5px;
     color: #F6F0E4;
+  }
+}
+@media screen and (max-width: 810px) {
+  .home .item-1 {
+    background-image: url("../images/home/home1-991.jpg");
+    background-position: center;
+  }
+  .home .item-2 {
+    background-image: url("../images/home/home2-991.jpg");
+    background-position: center;
+  }
+  .home .item-3 {
+    background-image: url("../images/home/home3-991.jpg");
+    background-position: center;
+  }
+  .home .yes810 {
+    display: block;
   }
 }
 @media screen and (max-width: 768px) {
