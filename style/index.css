@@ -433,8 +433,14 @@ header nav .nav-item {
   display: block;
   color: #F68261;
 }
+.partners .yes991 {
+  display: none !important;
+}
 @media screen and (max-width: 991px) {
-  .partners .d-flex {
+  .partners .none991 {
+    display: none !important;
+  }
+  .partners .yes991 {
     display: block !important;
   }
 }
@@ -590,5 +596,15 @@ footer .footer {
   z-index: 999999;
   opacity: 1;
   transition: 0.5s;
+}
+@media screen and (max-width: 1399px) {
+  .none1399 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .none991 {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=index.css.map */
