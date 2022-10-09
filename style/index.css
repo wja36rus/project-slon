@@ -1,9 +1,9 @@
 body {
-  font-family: 'Nunito', sans-serif;
-  background: #F6F3EF;
+  font-family: 'Arial', sans-serif;
+  background: #F6F0E4;
 }
 .title {
-  color: #665653;
+  color: #3B090D;
   text-align: center;
 }
 .title .big-title {
@@ -25,7 +25,7 @@ body {
   }
 }
 header {
-  background: #F6F3EF;
+  background: #F6F0E4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   position: fixed;
   top: 0;
@@ -35,16 +35,16 @@ header {
 header .logo {
   font-size: 22.5px;
   line-height: 27px;
-  color: #665653;
+  color: #3B090D;
   margin: 5px 0 5px 0;
 }
 header .connect {
   font-size: 18px;
   text-decoration: none;
-  color: #665653;
+  color: #3B090D;
 }
 header .connect-hover:hover {
-  color: #665653;
+  color: #3B090D;
   text-decoration: underline;
 }
 header .btn-outline {
@@ -59,7 +59,7 @@ header .btn-outline {
   margin-bottom: auto;
 }
 header .btn-outline:hover {
-  background: #665653;
+  background: #3B090D;
   color: #ffffff;
   transition: 0.5s;
 }
@@ -84,7 +84,7 @@ header nav {
   padding-top: 10px;
 }
 header nav .nav-item {
-  color: #665653;
+  color: #3B090D;
   text-decoration: none;
   font-weight: 700;
   font-size: 16.65px;
@@ -191,41 +191,41 @@ header nav .nav-item {
 }
 .home h1 {
   font-size: 67.5px;
-  color: #F6F3EF;
+  color: #F6F0E4;
   font-weight: bold;
 }
 .home h3 {
   font-size: 27px;
-  color: #F6F3EF;
+  color: #F6F0E4;
   font-weight: bold;
 }
 .home h4 {
   font-size: 22.5px;
-  color: #F6F3EF;
+  color: #F6F0E4;
 }
 .home .btn-white {
   font-size: 18px;
-  color: #665653;
+  color: #3B090D;
   background: #ffffff;
   border-radius: 2rem;
-  border: 1px solid #665653;
+  border: 1px solid #3B090D;
   padding: 15px 40px 15px 40px;
   margin-bottom: 8rem;
 }
 @media screen and (max-width: 991px) {
   .home h1 {
     font-size: 36px;
-    color: #F6F3EF;
+    color: #F6F0E4;
     font-weight: bold;
   }
   .home h3 {
     font-size: 22.5px;
-    color: #F6F3EF;
+    color: #F6F0E4;
     font-weight: bold;
   }
   .home h4 {
     font-size: 22.5px;
-    color: #F6F3EF;
+    color: #F6F0E4;
   }
 }
 @media screen and (max-width: 768px) {
@@ -247,7 +247,7 @@ header nav .nav-item {
 @media screen and (max-width: 390px) {
   .home h1 {
     font-size: 27px;
-    color: #F6F3EF;
+    color: #F6F0E4;
     font-weight: bold;
   }
 }
@@ -259,15 +259,15 @@ header nav .nav-item {
 .about h1 {
   font-size: 27px;
   line-height: 27px;
-  color: #665653;
+  color: #3B090D;
 }
 .about h2 {
   font-size: 18px;
   font-weight: bold;
-  color: #665653;
+  color: #3B090D;
 }
 .about .body {
-  color: #665653;
+  color: #3B090D;
   font-size: 18px;
 }
 .about .about-img {
@@ -292,15 +292,15 @@ header nav .nav-item {
   .about h1 {
     font-size: 18px;
     line-height: 18px;
-    color: #665653;
+    color: #3B090D;
   }
   .about h2 {
     font-size: 15.3px;
     font-weight: bold;
-    color: #665653;
+    color: #3B090D;
   }
   .about .body {
-    color: #665653;
+    color: #3B090D;
     font-size: 15.3px;
   }
 }
@@ -308,23 +308,26 @@ header nav .nav-item {
   width: 45%;
   background: white;
   padding: 13.5px;
-  color: #665653;
+  color: #3B090D;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
+  min-height: 670px;
+  position: relative;
 }
 .service .cards-title {
   font-size: 18px;
   font-weight: bold;
-  min-height: 45px;
+  min-height: 54px;
   display: flex;
   align-items: center;
 }
 .service .cards-text {
   font-size: 14.4px;
   padding: 13.5px;
+  min-height: 570px;
 }
 .service .btn-service {
-  background: #665653;
+  background: #3B090D;
   color: #ffffff;
   font-size: 16.2px;
   margin: 0 auto;
@@ -347,12 +350,12 @@ header nav .nav-item {
   margin: 0 auto;
 }
 .cases .cases-title {
-  font-size: 22.5px;
+  font-size: 18px;
   font-style: italic;
   padding: 10px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #665653;
+  color: #3B090D;
   font-weight: bold;
 }
 .cases .cases-text {
@@ -360,11 +363,11 @@ header nav .nav-item {
   font-size: 18px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #665653;
+  color: #3B090D;
   min-height: 9rem;
 }
 .cases .btn-cases {
-  background: #665653;
+  background: #3B090D;
   color: #ffffff;
   font-size: 18px;
   margin: 0 auto;
@@ -383,7 +386,7 @@ header nav .nav-item {
   }
 }
 .preference .preference-item {
-  background: #665653;
+  background: #3B090D;
   padding: 2rem;
   width: 23rem;
   text-align: center;
@@ -441,12 +444,12 @@ header nav .nav-item {
   line-height: 29px;
   min-height: 6rem;
   padding: 10px;
-  color: #665653;
+  color: #3B090D;
 }
 .news .news-text {
   font-size: 18px;
   padding: 10px;
-  color: #665653;
+  color: #3B090D;
 }
 .news .blog-card {
   background: #ffffff;
@@ -473,36 +476,45 @@ header nav .nav-item {
   box-shadow: 0px -4px 5px 2px white;
   margin-left: 10px;
 }
+.news .btn-cases {
+  background: #3B090D;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 30px 10px 30px;
+  border-radius: 2rem;
+  border: none;
+}
 form {
   width: 50%;
   margin: 0 auto;
 }
 form h1 {
-  color: #665653;
+  color: #3B090D;
 }
 form h2 {
-  color: #665653;
+  color: #3B090D;
 }
 form .form-input {
   height: 50px;
-  border: 1px solid #665653;
+  border: 1px solid #3B090D;
   margin-bottom: 1rem;
-  color: #665653;
+  color: #3B090D;
   font-size: 18px;
 }
 form .form-text {
-  border: 1px solid #665653;
+  border: 1px solid #3B090D;
   margin-bottom: 1rem;
-  color: #665653;
+  color: #3B090D;
   font-size: 18px;
 }
 form small {
-  color: #665653;
-  text-align: center;
+  color: #3B090D;
 }
 form .btn-form {
-  background: #665653;
-  color: #ffffff;
+  background: #3B090D;
+  color: #F6F0E4;
   font-size: 18px;
   display: block;
   padding: 10px 30px 10px 30px;
@@ -527,7 +539,7 @@ form .btn-form {
   }
 }
 footer {
-  background: linear-gradient(180deg, #665653 38.72%, #403A39 100%);
+  background: linear-gradient(180deg, #574144 10%, #3B090D 100%);
   color: #ffffff;
 }
 footer .footer {
@@ -551,8 +563,8 @@ footer .footer {
   opacity: 0;
 }
 .out-form .btn-white {
-  background: #665653;
-  color: #ffffff;
+  background: #3B090D;
+  color: #F6F0E4;
   font-size: 16.2px;
   margin: 0 auto;
   display: block;
@@ -562,7 +574,7 @@ footer .footer {
 }
 .out-form .inset-form {
   width: 280px;
-  background: white;
+  background: #ffffff;
   padding: 10px;
 }
 .out-form .close-form {

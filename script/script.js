@@ -12,16 +12,16 @@ $(document).ready(function () {
         $('.mobile-menu').removeClass("active");
     });
 
-    $('.nav-item').on('click', function(e){
+    $('.nav-item').on('click', function (e) {
 
         const header = $('header').height();
 
         console.log(header);
-        $('html,body').stop().animate({ scrollTop: $(e.target.hash).offset().top - header }, 500);
+        $('html,body').stop().animate({scrollTop: $(e.target.hash).offset().top - header}, 500);
         e.preventDefault();
-      });
+    });
 
-    $(".btn-white, .btn-outline, .btn-service").on("click", function () {
+    $(".item-1, .item-2, .item-3, .btn-white, .btn-outline, .btn-service").on("click", function () {
         $('.out-form').addClass("active");
     });
 

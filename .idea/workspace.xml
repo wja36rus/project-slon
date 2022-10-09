@@ -2,15 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2b8bc47-8692-4098-9d96-30dfff373489" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/style/outform.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/outform.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/outform.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/cases/cases.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/about/about.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/about/about.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/diplom/dip (2).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/diplom/dip (2).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/diplom/dip (3).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/diplom/dip (3).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/diplom/dip (4).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/diplom/dip (4).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/diplom/dip (5).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/diplom/dip (5).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/diplom/dip (6).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/diplom/dip (6).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/diplom/dip (7).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/diplom/dip (7).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/form/form.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/form/form.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/home/home1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/home/home1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/home/home2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/home/home2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/home/home3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/home/home3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/menu/burger-closed.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/menu/burger-closed.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/menu/burger-opened.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/menu/burger-opened.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/menu/email.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/menu/email.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/menu/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/menu/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/menu/mobile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/menu/mobile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/menu/telegramm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/menu/telegramm.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/menu/whatsup.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/menu/whatsup.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/preference/Group 104.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/preference/Group 104.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/preference/Group 105.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/preference/Group 105.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/preference/Group 106.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/preference/Group 106.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/preference/Group 107.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/preference/Group 107.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/preference/Group 108.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/preference/Group 108.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/preference/Group 109.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/preference/Group 109.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/cases.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/cases.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/footer.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/footer.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/form.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/form.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/news.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/news.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/outform.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/outform.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/service.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/service.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/settings.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/settings.less" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +96,7 @@
       <workItem from="1664822212786" duration="6088000" />
       <workItem from="1664909360219" duration="7708000" />
       <workItem from="1665217526195" duration="6665000" />
-      <workItem from="1665300036766" duration="828000" />
+      <workItem from="1665300036766" duration="5245000" />
     </task>
     <servers />
   </component>
