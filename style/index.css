@@ -218,15 +218,15 @@ header nav .nav-item {
 @media screen and (max-width: 1399px) {
   .home .item-1 {
     background-image: url("../images/home/home1-1399.jpg");
-    background-position: center;
+    background-position: left !important;
   }
   .home .item-2 {
     background-image: url("../images/home/home2-1399.jpg");
-    background-position: center;
+    background-position: left !important;
   }
   .home .item-3 {
     background-image: url("../images/home/home3-1399.jpg");
-    background-position: center;
+    background-position: left !important;
   }
 }
 @media screen and (max-width: 991px) {
@@ -289,6 +289,8 @@ header nav .nav-item {
   width: 50%;
   margin-left: auto;
   text-align: justify;
+  background: white;
+  padding: 19px;
 }
 .about h1 {
   font-size: 27px;
@@ -305,7 +307,7 @@ header nav .nav-item {
   font-size: 18px;
 }
 .about .about-img {
-  width: 45%;
+  width: 45.45%;
 }
 @media screen and (max-width: 991px) {
   .about .about-img {
