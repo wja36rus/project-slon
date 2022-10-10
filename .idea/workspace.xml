@@ -4,18 +4,11 @@
     <list default="true" id="d2b8bc47-8692-4098-9d96-30dfff373489" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/about/about.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/about/about.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/form/form.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/form/form.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/home/home1-1399.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/home/home1-1399.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/home/home2-1399.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/home/home2-1399.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/home/home3-1399.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/home/home3-1399.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/about.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/about.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/home.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/home.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.less" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,18 +50,6 @@
       <recent name="C:\Users\Sergey\Desktop\project-slon\images\diplom" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -86,6 +67,7 @@
       <workItem from="1665217526195" duration="6665000" />
       <workItem from="1665300036766" duration="9394000" />
       <workItem from="1665396908978" duration="524000" />
+      <workItem from="1665428618516" duration="290000" />
     </task>
     <servers />
   </component>
@@ -97,7 +79,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
