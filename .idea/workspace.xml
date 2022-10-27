@@ -2,17 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2b8bc47-8692-4098-9d96-30dfff373489" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/backup/22.10.27.13.21/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/conf.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lang.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/textolite.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/textolite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/textolite.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/preference.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/preference.less" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,15 +54,29 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/diplom" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\slon\admin" />
+      <recent name="C:\OSPanel\domains\slon" />
       <recent name="C:\Users\Sergey\Desktop\project-slon\images\diplom" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -68,6 +96,9 @@
       <workItem from="1665300036766" duration="9394000" />
       <workItem from="1665396908978" duration="524000" />
       <workItem from="1665428618516" duration="290000" />
+      <workItem from="1666857941881" duration="384000" />
+      <workItem from="1666858430275" duration="762000" />
+      <workItem from="1666859221524" duration="4261000" />
     </task>
     <servers />
   </component>

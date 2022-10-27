@@ -427,12 +427,19 @@ header nav .nav-item {
   width: 23rem;
   text-align: center;
   margin: 0 auto 2rem;
+  transition: 0.5s;
 }
 .preference .preference-text {
   height: 7rem;
   padding-top: 1rem;
   display: flex;
   align-items: center;
+}
+.preference .preference-item:hover {
+  transition: 0.5s;
+  background: #090000;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 @media screen and (max-width: 991px) {
   .preference .preference-item {
@@ -647,5 +654,22 @@ footer .footer {
   background: #f6f0e4 !important;
   border: 1px solid #3b090d !important;
   color: #3b090d !important;
+}
+.anim-hover {
+  transition: 0.5s;
+}
+.anim-hover:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.btn-hovers {
+  transition: 0.5s;
+}
+.btn-hovers:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 2px 3px 0 black;
 }
 /*# sourceMappingURL=index.css.map */
