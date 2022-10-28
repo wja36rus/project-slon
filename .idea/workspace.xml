@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2b8bc47-8692-4098-9d96-30dfff373489" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/redaktor/fun/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/fun/exit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redaktor/case.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/case.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redaktor/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/setting.json" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/setting.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

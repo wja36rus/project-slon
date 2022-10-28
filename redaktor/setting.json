@@ -1,8 +1,8 @@
 {
     "connect": {
         "host": "localhost",
-        "user": "root",
-        "password": "",
-        "dbname": "slon"
+        "user": "mkharcqp_slon",
+        "password": "Ez9S1q&G",
+        "dbname": "mkharcqp_slon"
     }
 }
