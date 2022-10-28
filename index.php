@@ -656,7 +656,7 @@
             success: function (response) {
                 $.map(response, function (elementOrValue, indexOrKey) {
 
-                    const cont = '<a class="card-href none991" href="">'+
+                    const cont = '<a class="card-href" href="">'+
                         '<div class="blog-card">'+
                             '<img src="images/news/news.jpg" alt="" class="w-100">'+
                             '<p class="news-title">'+elementOrValue.title+'</p>'+
@@ -710,7 +710,7 @@
             success: function (response) {
                 $.map(response, function (elementOrValue, indexOrKey) {
 
-                    const cont = '<a class="card-href none991" href="">'+
+                    const cont = '<a class="card-href" href="">'+
                         '<div class="blog-card">'+
                             '<img src="images/news/news.jpg" alt="" class="w-100">'+
                             '<p class="news-title">'+elementOrValue.title+'</p>'+
