@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2b8bc47-8692-4098-9d96-30dfff373489" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/backup/22.10.27.13.21/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/conf.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lang.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/textolite.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/textolite.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/textolite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/case/Cases.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/setting.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/preference.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/preference.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/conf.ini" beforeDir="false" afterPath="$PROJECT_DIR$/admin/conf.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/backup/22.10.28.09.47/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +52,9 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\slon\redaktor" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\slon\admin" />
       <recent name="C:\OSPanel\domains\slon" />
@@ -99,6 +94,9 @@
       <workItem from="1666857941881" duration="384000" />
       <workItem from="1666858430275" duration="762000" />
       <workItem from="1666859221524" duration="4261000" />
+      <workItem from="1666939465020" duration="410000" />
+      <workItem from="1666939939091" duration="1044000" />
+      <workItem from="1666941068001" duration="1639000" />
     </task>
     <servers />
   </component>

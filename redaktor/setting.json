@@ -1,0 +1,8 @@
+{
+    "connect": {
+        "host": "localhost",
+        "user": "root",
+        "password": "",
+        "dbname": "slon"
+    }
+}
