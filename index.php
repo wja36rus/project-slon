@@ -89,10 +89,10 @@
                         <a class="connect view1100 ms-2" href="mailto:mkharchenko_pro@mail.ru">
                             <img class="anim-hover" src="images/menu/email.svg" alt="">
                         </a>
-                        <a class="connect ms-2" href="mailto:mkharchenko_pro@mail.ru">
+                        <a class="connect ms-2" href="https://t.me/+79103449188">
                             <img class="anim-hover" src="images/menu/telegramm.svg" alt="">
                         </a>
-                        <a class="connect ms-2" href="mailto:mkharchenko_pro@mail.ru">
+                        <a class="connect ms-2" href="https://wa.me/+79103449188">
                             <img class="anim-hover" src="images/menu/whatsup.svg" alt="">
                         </a>
                     </div>
@@ -142,10 +142,10 @@
                     <a class="connect ms-2" href="mailto:mkharchenko_pro@mail.ru">
                         <img src="images/menu/email.svg" alt="">
                     </a>
-                    <a class="connect ms-2" href="mailto:mkharchenko_pro@mail.ru">
+                    <a class="connect ms-2" href="https://t.me/+79103449188">
                         <img src="images/menu/telegramm.svg" alt="">
                     </a>
-                    <a class="connect ms-2" href="mailto:mkharchenko_pro@mail.ru">
+                    <a class="connect ms-2" href="https://wa.me/+79103449188">
                         <img src="images/menu/whatsup.svg" alt="">
                     </a>
                 </div>
@@ -406,8 +406,8 @@
                                 <p class="card-partner-title">
                                     ООО «Компания Альфа-Снаб»
                                 </p>
-                                <a href="www.alfa-snab.com" class="card-partner-href">
-                                    www.alfa-snab.com
+                                <a href="https://www.alfa-snab.com" class="card-partner-href">
+                                    https://www.alfa-snab.com
                                 </a>
                             </div>
                             <div class="card-partner text-center">
@@ -438,8 +438,8 @@
                                 <p class="card-partner-title">
                                     Рекламное агентство «DDDAgency»
                                 </p>
-                                <a href="" class="card-partner-href">
-                                    https://ddd-agency.ru/
+                                <a href="https://ddd-agency.ru" class="card-partner-href">
+                                    https://ddd-agency.ru
                                 </a>
                             </div>
                             <div class="card-partner text-center">
@@ -472,8 +472,8 @@
                             <p class="card-partner-title">
                                 ООО «Компания Альфа-Снаб»
                             </p>
-                            <a href="www.alfa-snab.com" class="card-partner-href">
-                                www.alfa-snab.com
+                            <a href="https://www.alfa-snab.com" class="card-partner-href">
+                                https://www.alfa-snab.com
                             </a>
                         </div>
                     </div>
@@ -506,8 +506,8 @@
                             <p class="card-partner-title">
                                 Рекламное агентство «DDDAgency»
                             </p>
-                            <a href="" class="card-partner-href">
-                                https://ddd-agency.ru/
+                            <a href="https://ddd-agency.ru" class="card-partner-href">
+                                https://ddd-agency.ru
                             </a>
                         </div>
                     </div>
@@ -547,20 +547,21 @@
         <div id="form" class="container">
             <div class="d-flex align-items-start flex-wrap pt-5 pb-5">
 
-                <form action="#" method="post">
+                <form id="bootom-from" method="post">
                     <h1>ЕСТЬ ВОПРОС?</h1>
                     <h2>Позвоните или оставьте заявку</h2>
                     <div class="d-grid">
-                        <input class="form-input" type="text" name="name" placeholder="Имя">
-                        <input class="form-input" type="text" name="phone" placeholder="Номер телефона">
-                        <textarea rows="10" class="form-text" type="text" name="text"
-                                  placeholder="Ваш вопрос"></textarea>
+                        <input id="bottom-form-name" class="form-input" type="text" name="name" placeholder="Имя*">
+                        <input id="bottom-form-phone" class="form-input" type="text" name="phone" placeholder="Номер телефона*">
+                        <textarea id="bottom-form-text" rows="10" class="form-text" name="text" placeholder="Ваш вопрос"></textarea>
                         <small>
                             Нажимая на кнопку «Отправить», я соглашаюсь на обработку персональных данных в соответствии
                             с условиями и содержанием
-                            <a href="">Политики конфиденциальности</a>
+                            <a href="doc.docx" download="doc.docx">Политики конфиденциальности</a>
                         </small>
-                        <button class="btn-hovers btn-form">ОТПРАВИТЬ</button>
+                        <p id="error-bottom" class="text-center text-danger mb-0"></p>
+                        <button id="btn-bottom-form" class="btn-hovers btn-form">ОТПРАВИТЬ</button>
+
                     </div>
                 </form>
 
@@ -586,12 +587,12 @@
                 <h6>с 9:00 до 18:30!</h6>
                 <br>
                 <h6>г. Воронеж, площадь Ленина, д. 3</h6>
-                <h6>+7 910 344 91 88</h6>
-                <h6>mkharchenko_pro@mail.ru</h6>
+                <h6><a href="tel:+7 910 344 91 88" class="text-decoration-none text-white">+7 910 344 91 88</a></h6>
+                <h6><a href="mailto:mkharchenko_pro@mail.ru" class="text-decoration-none text-white">mkharchenko_pro@mail.ru</a></h6>
                 <div class="d-flex pt-3">
                     <a href="" class="me-2"><img src="images/footer/vk.png" alt=""></a>
-                    <a href="" class="me-2"><img src="images/footer/tg.png" alt=""></a>
-                    <a href="" class="me-2"><img src="images/footer/wu.png" alt=""></a>
+                    <a href="https://t.me/+79103449188" class="me-2"><img src="images/footer/tg.png" alt=""></a>
+                    <a href="https://wa.me/+79103449188" class="me-2"><img src="images/footer/wu.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -601,17 +602,24 @@
     </div>
 </footer>
 <div class="out-form">
-    <form action="#" class="inset-form d-grid">
-        <img class="close-form" src="images/menu/burger-opened.svg" alt="">
-        <input class="form-control mb-1" type="text" placeholder="Ваше имя">
-        <input class="form-control mb-1" type="text" placeholder="Ваш телефон">
-        <input class="form-control mb-1" type="text" placeholder="Ваш e-mail">
-        <div class="d-flex align-items-center text-start">
-            <input class="mt-2 mb-2 me-2" type="checkbox" checked>
-            <small>согласен с правилами обработки персональных данных</small>
+    <form id="out-form" method="post" class="inset-form d-grid">
+        <div class="forms">
+            <img class="close-form" src="images/menu/burger-opened.svg" alt="">
+            <input id="form-input-name" class="form-control mb-1" name="name" type="text" placeholder="Ваше имя*">
+            <input id="form-input-phone" class="form-control mb-1" name="phone" type="text" placeholder="Ваш телефон*">
+            <input id="form-input-email" class="form-control mb-1" name="email" type="text" placeholder="Ваш e-mail">
+            <div class="d-flex align-items-center text-start">
+                <input id="form-input-check" class="mt-2 mb-2 me-2" type="checkbox" checked>
+                <small>согласен с правилами обработки персональных данных</small>
+            </div>
+            <small id="error-form" class="mb-0 text-center text-danger"></small>
+            <button id="out-btn" class="btn-hovers btn-white">Отправить</button>
         </div>
-
-        <button class="btn-hovers btn-white">Отправить</button>
+        <div class="forms-out text-center d-none">
+            <p>Ваша заявка успешно отправлена.</p>
+            <p>Благодарю!</p>
+            <p>Свяжусь с Вами в ближайшее время</p>
+        </div>
     </form>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -622,7 +630,77 @@
 <script src="script/script.js"></script>
 <script>
     $(document).ready(function () {
-        
+
+        $('#btn-bottom-form').click(function (e) {
+            e.preventDefault();
+
+            const data = $('#bootom-from').serialize();
+
+            const name = $('#bottom-form-name').val();
+            const phone = $('#bottom-form-phone').val();
+
+            if (name === "" || phone === "") {
+                $('#error-bottom').empty().text("Заполните поля Имя и Телефон");
+            } else {
+                $.ajax({
+                    type: "POST",
+                    url: "redaktor/fun/mailtobottom.php",
+                    data: data,
+                    dataType: "text",
+                    success: function (response) {
+                        $('#error-bottom').empty();
+                        if(response) {
+                            $('#error-bottom').removeClass("text-danger").addClass('text-success').text("Сообщение отправлено");
+
+                            setTimeout(() => {
+                                $('#error-bottom').addClass("text-danger").removeClass('text-success');
+                                $('#error-bottom').empty();
+                                $('#bottom-form-name').val("");
+                                $('#bottom-form-phone').val("");
+                            }, 2500)
+                        }
+                    }
+                })
+            }
+
+        });
+
+        $('#out-btn').click(function (e) {
+            e.preventDefault();
+
+            const data = $('#out-form').serialize();
+
+            const name = $('#form-input-name').val();
+            const phone = $('#form-input-phone').val();
+            const check = $('#form-input-check').prop('checked');
+
+            if (name === "" || phone === "") {
+                $('#error-form').empty().text("Заполните поля Имя и Телефон");
+            } else if (!check) {
+                $('#error-form').empty().text("Требуется согласие с правилами обработки персональных данных");
+            } else {
+                $.ajax({
+                    type: "POST",
+                    url: "redaktor/fun/mailto.php",
+                    data: data,
+                    dataType: "text",
+                    success: function (response) {
+                        $('#error-form').empty();
+                        if(response) {
+                            $('.forms').addClass('d-none');
+                            $('.forms-out').removeClass('d-none');
+
+                            setTimeout(() => {
+                                $('.forms').removeClass('d-none');
+                                $('.forms-out').addClass('d-none');
+                                $('.out-form').removeClass('active');
+                            }, 1500)
+                        }
+                    }
+                })
+            }
+        });
+
         $.ajax({
             type: "GET",
             url: "redaktor/case/fcases.php?type=notfull",
@@ -630,8 +708,8 @@
             success: function (response) {
                 $.map(response, function (elementOrValue, indexOrKey) {
 
-                    const cont = '<div class="cases-card mb-5">'+
-                    '<img class="w-100" src="images/cases/cases.jpg" alt="">'+
+                    const cont = '<div class="cases-card mb-5">' +
+                        '<img class="w-100" src="images/cases/cases.jpg" alt="">' +
                         '<div class="cases-title">'+
                             elementOrValue.title+
                         '</div>'+
@@ -643,7 +721,6 @@
                         '<a href="cases.php?case='+elementOrValue.id+'" class="btn-hovers btn-cases mt-2">Читать дальше</a>'+
                     '</div>';
 
-                    console.log(cont);
                     $('.cases-wrap').append(cont);
                 });
             }

@@ -248,15 +248,15 @@ header nav .nav-item {
 @media screen and (max-width: 810px) {
   .home .item-1 {
     background-image: url("../images/home/home1-991.jpg");
-    background-position: center;
+    background-position: 78% !important;
   }
   .home .item-2 {
     background-image: url("../images/home/home2-991.jpg");
-    background-position: center;
+    background-position: 78% !important;
   }
   .home .item-3 {
     background-image: url("../images/home/home3-991.jpg");
-    background-position: center;
+    background-position: 78% !important;
   }
   .home .yes810 {
     display: block;
@@ -360,7 +360,7 @@ header nav .nav-item {
 .service .cards-text {
   font-size: 14.4px;
   padding: 13.5px;
-  min-height: 570px;
+  min-height: 690px;
 }
 .service .btn-service {
   background: #3B090D;
@@ -682,5 +682,8 @@ h1 {
 p {
   color: #3B090D;
   font-size: 18px;
+}
+.carousel-indicators {
+  bottom: 20px;
 }
 /*# sourceMappingURL=index.css.map */

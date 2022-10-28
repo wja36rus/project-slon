@@ -10,13 +10,6 @@ class Cases extends PDO
         $this->setting = json_decode(file_get_contents($_SERVER["DOCUMENT_ROOT"] . "/redaktor/setting.json"), true);
         parent::__construct("mysql:host={$this->setting["connect"]["host"]};dbname={$this->setting["connect"]["dbname"]}", $this->setting["connect"]["user"], $this->setting["connect"]["password"]);
 
-        //header('Content-Type: application/json');
-        header('Access-Control-Allow-Origin: *');
-        header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
-        header('Access-Control-Allow-Headers: Content-Type');
-        header('Access-Control-Allow-Credentials: true');
-        header('Content-Type: text/html; charset=utf-8');
-
         if (!$adm) {
             self::getCases($type, false, $where);
         }
@@ -26,7 +19,7 @@ class Cases extends PDO
     public function getCases($type, $adm = false, $where = false)
     {
         if ($type === "notfull") {
-            $query = "select * from cases where status = '1' order by order_by asc limit 3";
+            $query = "select * from cases where status = '1' order by order_by asc limit 2";
         } else if ($adm && $where) {
             $query = "select * from cases where id = '$where'";
         } else if ($adm) {

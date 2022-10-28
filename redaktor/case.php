@@ -72,7 +72,7 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Cases.php";
 
                 <div class="d-flex align-items-center mb-2">
                     <h5 class="w-25">Подзаголовок:</h5>
-                    <input class="form-control ms-2"  name="title-<?= $data[$is]["id"] ?>" type="text" value="<?= $data[$is]["subtitle"] ?>">
+                    <input class="form-control ms-2"  name="subtitle-<?= $data[$is]["id"] ?>" type="text" value="<?= $data[$is]["subtitle"] ?>">
                 </div>
 
                 <div class="d-flex align-items-center mb-2">
