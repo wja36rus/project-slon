@@ -1,6 +1,6 @@
 <?php
 // несколько получателей
-$to  = 'wja36rus@yandex.ru';
+$to  = 'mkharchenko_pro@mail.ru';
 
 // тема письма
 $subject = 'Сообщение с сайта pravo-slonagency.ru';
