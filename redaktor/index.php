@@ -1,4 +1,8 @@
 <?php
+session_start();
+if (!$_SESSION["users_key"]) {
+    header("Location: login.php");
+}
 include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/News.php";
 ?>
 <!doctype html>
@@ -16,6 +20,7 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/News.php";
         <div class="d-flex align-items-center ">
             <a href="index.php" class="btn btn-success active">Новости</a>
             <a href="case.php" class="btn btn-success ms-2">Случаи из практики</a>
+            <a href="fun/exit.php" class="btn btn-danger ms-auto">Выход</a>
         </div>
     </div>
 </div>

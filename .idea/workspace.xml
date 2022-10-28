@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2b8bc47-8692-4098-9d96-30dfff373489" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/redaktor/case.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/case/fcases.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/case/fnews.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/fun/addCases.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/fun/addNews.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/fun/saveCases.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/fun/saveNews.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/fun/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/fun/exit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redaktor/case/Cases.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/case/Cases.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redaktor/case/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/case/News.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/case.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/case.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
