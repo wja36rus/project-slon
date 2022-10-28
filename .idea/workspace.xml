@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2b8bc47-8692-4098-9d96-30dfff373489" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/redaktor/case/News.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/case.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/case/fcases.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/case/fnews.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/fun/addCases.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/fun/addNews.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/fun/saveCases.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/fun/saveNews.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/case/Cases.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/case/Cases.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/case/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/case/News.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/redaktor/case" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/redaktor/fun" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
@@ -53,6 +63,7 @@
       <recent name="C:\OSPanel\domains\slon\redaktor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\slon\redaktor\fun" />
       <recent name="C:\OSPanel\domains\slon\redaktor\case" />
       <recent name="C:\OSPanel\domains\slon\admin" />
       <recent name="C:\OSPanel\domains\slon" />
@@ -94,7 +105,7 @@
       <workItem from="1666859221524" duration="4261000" />
       <workItem from="1666939465020" duration="410000" />
       <workItem from="1666939939091" duration="1044000" />
-      <workItem from="1666941068001" duration="1639000" />
+      <workItem from="1666941068001" duration="2235000" />
     </task>
     <servers />
   </component>

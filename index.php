@@ -625,7 +625,7 @@
         
         $.ajax({
             type: "GET",
-            url: "redaktor/case/Cases.php?type=notfull",
+            url: "redaktor/case/fcases.php?type=notfull",
             dataType: "json",
             success: function (response) {
                 $.map(response, function (elementOrValue, indexOrKey) {
@@ -651,7 +651,7 @@
 
         $.ajax({
             type: "GET",
-            url: "redaktor/case/News.php?type=notfull",
+            url: "redaktor/case/fnews.php?type=notfull",
             dataType: "json",
             success: function (response) {
                 $.map(response, function (elementOrValue, indexOrKey) {
@@ -675,7 +675,7 @@
             $('.cases-wrap').empty();
              $.ajax({
             type: "GET",
-            url: "redaktor/case/Cases.php?type=all",
+            url: "redaktor/case/fcases.php?type=all",
             dataType: "json",
             success: function (response) {
                 $.map(response, function (elementOrValue, indexOrKey) {
@@ -705,7 +705,7 @@
             $('.news-wrap').empty();
              $.ajax({
             type: "GET",
-            url: "redaktor/case/News.php?type=all",
+            url: "redaktor/case/fnews.php?type=all",
             dataType: "json",
             success: function (response) {
                 $.map(response, function (elementOrValue, indexOrKey) {
