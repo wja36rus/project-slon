@@ -121,9 +121,9 @@ $data = $news->getCases("all", true, $_GET["case"]);
 <main>
     <div class="container pt-5 mt-5">
         <div class="pt-5">
-            <h1><?=$data[0]["title"]?></h1>
-            <p><?=$data[0]["subtitle"]?></p>
-            <p><?=$data[0]["text"]?></p>
+            <h1><?= $data[0]["title"] ?></h1>
+            <p><?= $data[0]["subtitle"] ?></p>
+            <p><?= preg_replace("/\r\n|\r|\n/", '<br>', $data[0]["text"]); ?></p>
         </div>
     </div>
 </main>
@@ -281,6 +281,7 @@ $data = $news->getCases("all", true, $_GET["case"]);
         });
         });
     });
+
 
 
 
