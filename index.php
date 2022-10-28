@@ -640,7 +640,7 @@
                                 elementOrValue.subtitle+
                             '</p>'+
                         '</div>'+
-                        '<button class="btn-hovers btn-cases mt-2">Читать дальше</button>'+
+                        '<a href="cases.php?case='+elementOrValue.id+'" class="btn-hovers btn-cases mt-2">Читать дальше</a>'+
                     '</div>';
 
                     console.log(cont);
@@ -656,7 +656,7 @@
             success: function (response) {
                 $.map(response, function (elementOrValue, indexOrKey) {
 
-                    const cont = '<a class="card-href" href="">'+
+                    const cont = '<a class="card-href" href="news.php?news='+elementOrValue.id+'">'+
                         '<div class="blog-card">'+
                             '<img src="images/news/news.jpg" alt="" class="w-100">'+
                             '<p class="news-title">'+elementOrValue.title+'</p>'+
@@ -690,7 +690,7 @@
                                 elementOrValue.subtitle+
                             '</p>'+
                         '</div>'+
-                        '<button class="btn-hovers btn-cases mt-2">Читать дальше</button>'+
+                        '<a href="cases.php?case='+elementOrValue.id+'" class="btn-hovers btn-cases mt-2">Читать дальше</a>'+
                     '</div>';
 
                 

@@ -403,7 +403,6 @@ header nav .nav-item {
   min-height: 9rem;
 }
 .cases .btn-cases {
-  background: #3B090D;
   color: #ffffff;
   font-size: 18px;
   margin: 0 auto;
@@ -411,6 +410,9 @@ header nav .nav-item {
   padding: 10px 30px 10px 30px;
   border-radius: 2rem;
   border: none;
+  background: #3B090D;
+  text-align: center;
+  text-decoration: none;
 }
 @media screen and (max-width: 991px) {
   .cases .container {
@@ -671,5 +673,14 @@ footer .footer {
   cursor: pointer;
   transform: scale(1.1);
   box-shadow: 0 2px 3px 0 black;
+}
+h1 {
+  font-size: 27px;
+  line-height: 27px;
+  color: #3B090D;
+}
+p {
+  color: #3B090D;
+  font-size: 18px;
 }
 /*# sourceMappingURL=index.css.map */
