@@ -686,4 +686,28 @@ p {
 .carousel-indicators {
   bottom: 20px;
 }
+.btn-service-tg {
+  background: #3B090D;
+  color: #ffffff;
+  font-size: 16.2px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  border-radius: 2rem;
+  border: none;
+  text-decoration: none;
+  width: 200px;
+}
+.display768 {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .display768 {
+    display: grid;
+  }
+  .display768none {
+    display: none !important;
+  }
+}
 /*# sourceMappingURL=index.css.map */

@@ -99,8 +99,7 @@
                 </div>
             </div>
 
-            <button class="btn-hovers btn-outline">Получить консультацию</button>
-
+            <button class="btn-hovers btn-outline display768none">Получить консультацию</button>
             <div class="burger">
                 <img src="images/menu/burger-closed.svg" alt="">
             </div>
@@ -254,7 +253,8 @@
                     <p class="mb-0">๑ Судебная работа</p>
                     <p class="mb-0">๑ Иные услуги</p>
                 </div>
-                <button class="btn-hovers btn-service">Узнать подробнее</button>
+                <button class="btn-hovers btn-service display768none">Узнать подробнее</button>
+                <a href="https://t.me/+79103449188" class="btn-hovers btn-service-tg display768">Узнать подробнее</a>
             </div>
             <div class="cards">
                 <div class="mb-0 cards-title">
@@ -282,7 +282,8 @@
                     <p class="mb-0">๑ Иные услуги</p>
 
                 </div>
-                <button class="btn-hovers btn-service">Узнать подробнее</button>
+                <button class="btn-hovers btn-service display768none">Узнать подробнее</button>
+                <a href="https://t.me/+79103449188" class="btn-hovers btn-service-tg display768">Узнать подробнее</a>
             </div>
         </div>
     </section>
