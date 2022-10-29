@@ -38,7 +38,7 @@ $data = $news->getCases("all", true, $_GET["case"]);
                 <div class="d-flex align-items-center">
                     <img class="anim-hover" src="images/menu/email.svg" alt="">
                     <a class="connect connect-hover ms-2"
-                       href="mailto:mkharchenko_pro@mail.ru">mkharchenko_pro@mail.ru</a>
+                       href="mailto:info@pravo-slonagency.ru">info@pravo-slonagency.ru</a>
                 </div>
             </div>
 
@@ -51,7 +51,7 @@ $data = $news->getCases("all", true, $_GET["case"]);
                         <a class="connect view1100" href="tel:+7 910 344 91 88">
                             <img class="anim-hover" src="images/menu/mobile.svg" alt="">
                         </a>
-                        <a class="connect view1100 ms-2" href="mailto:mkharchenko_pro@mail.ru">
+                        <a class="connect view1100 ms-2" href="mailto:info@pravo-slonagency.ru">
                             <img class="anim-hover" src="images/menu/email.svg" alt="">
                         </a>
                         <a class="connect ms-2" href="https://t.me/+79103449188">
@@ -104,7 +104,7 @@ $data = $news->getCases("all", true, $_GET["case"]);
                     <a class="connect" href="tel:+7 910 344 91 88">
                         <img src="images/menu/mobile.svg" alt="">
                     </a>
-                    <a class="connect ms-2" href="mailto:mkharchenko_pro@mail.ru">
+                    <a class="connect ms-2" href="mailto:info@pravo-slonagency.ru">
                         <img src="images/menu/email.svg" alt="">
                     </a>
                     <a class="connect ms-2" href="https://t.me/+79103449188">
@@ -143,9 +143,9 @@ $data = $news->getCases("all", true, $_GET["case"]);
                 <br>
                 <h6>г. Воронеж, площадь Ленина, д. 3</h6>
                 <h6><a href="tel:+7 910 344 91 88" class="text-decoration-none text-white">+7 910 344 91 88</a></h6>
-                <h6><a href="mailto:mkharchenko_pro@mail.ru" class="text-decoration-none text-white">mkharchenko_pro@mail.ru</a></h6>
+                <h6><a href="mailto:info@pravo-slonagency.ru" class="text-decoration-none text-white">info@pravo-slonagency.ru</a></h6>
                 <div class="d-flex pt-3">
-                    <a href="" class="me-2"><img src="images/footer/vk.png" alt=""></a>
+                    <a href="https://vk.com/mkharchenko_prof" class="me-2"><img src="images/footer/vk.png" alt=""></a>
                     <a href="https://t.me/+79103449188" class="me-2"><img src="images/footer/tg.png" alt=""></a>
                     <a href="https://wa.me/+79103449188" class="me-2"><img src="images/footer/wu.png" alt=""></a>
                 </div>
