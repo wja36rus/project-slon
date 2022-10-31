@@ -47,55 +47,57 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Diplom.php";
     </div>
     <form action="fun/saveDiplom.php" method="post" enctype="multipart/form-data">
         <input type="submit" value="Сохранить" class="btn btn-primary">
-        <?php
-        $news = new Diplom();
-        $data = $news->getCases(true);
+        <div class="d-flex align-items-center flex-wrap">
+            <?php
+            $news = new Diplom();
+            $data = $news->getCases(true);
 
-        for ($is = 0; $is < count($data); $is++):
-            ?>
-            <div class="card p-2 m-2">
+            for ($is = 0; $is < count($data); $is++):
+                ?>
+                <div class="card p-2 m-2" style="width: 48.5%; height: 30rem">
 
-                <div class="d-flex align-items-center mb-2">
-                    <h5 class="w-25">ID:</h5>
-                    <input class="form-control ms-2" name="id-<?= $data[$is]["id"] ?>" type="text"
-                           value="<?= $data[$is]["id"] ?>">
-                </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <h5 class="w-25">ID:</h5>
+                        <input class="form-control ms-2" name="id-<?= $data[$is]["id"] ?>" type="text"
+                               value="<?= $data[$is]["id"] ?>">
+                    </div>
 
-                <div class="d-flex align-items-center mb-2">
-                    <h5 class="w-25">Номер по порядку:</h5>
-                    <input class="form-control ms-2" name="order_by-<?= $data[$is]["order_by"] ?>" type="number"
-                           value="<?= $data[$is]["order_by"] ?>">
-                </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <h5 class="w-25">Номер по порядку:</h5>
+                        <input class="form-control ms-2" name="order_by-<?= $data[$is]["order_by"] ?>" type="number"
+                               value="<?= $data[$is]["order_by"] ?>">
+                    </div>
 
-                <div class="d-flex align-items-center mb-2">
-                    <h5 class="w-25">Статус:</h5>
-                    <select class="form-select" name="status-<?= $data[$is]["id"] ?>">
-                        <?php
-                        if ($data[$is]["status"]) {
-                            echo '<option value="1" selected>Активен</option>
+                    <div class="d-flex align-items-center mb-2">
+                        <h5 class="w-25">Статус:</h5>
+                        <select class="form-select" name="status-<?= $data[$is]["id"] ?>">
+                            <?php
+                            if ($data[$is]["status"]) {
+                                echo '<option value="1" selected>Активен</option>
                         <option value="0">Не активен</option>';
-                        } else {
-                            echo '<option value="1">Активен</option>
+                            } else {
+                                echo '<option value="1">Активен</option>
                         <option value="0" selected>Не активен</option>';
-                        }
-                        ?>
+                            }
+                            ?>
 
-                    </select>
-                </div>
+                        </select>
+                    </div>
 
-                <div class="d-flex align-items-center mb-2">
-                    <h5 class="w-25">Картинка:</h5>
-                    <div class="d-block">
-                        <div class="d-grid">
-                            <img style="width: 230px;" class="mb-2" src="../images/diplom/<?= $data[$is]["name"] ?>"
-                                 alt="">
-                            <p><?= $data[$is]["images"] ?></p>
+                    <div class="d-flex align-items-center mb-2">
+                        <h5 class="w-25">Картинка:</h5>
+                        <div class="d-block">
+                            <input class="form-control ms-2 mb-2" name="images-<?= $data[$is]["id"] ?>" type="file" accept="image/jpeg"/>
+                            <div class="d-grid">
+                                <img style="height: 250px;" class="mb-2" src="../images/diplom/<?= $data[$is]["name"] ?>"
+                                     alt="">
+                                <p><?= $data[$is]["images"] ?></p>
+                            </div>
                         </div>
-                        <input class="form-control ms-2" name="images-<?= $data[$is]["id"] ?>" type="file" accept="image/jpeg"/>
                     </div>
                 </div>
-            </div>
-        <?php endfor; ?>
+            <?php endfor; ?>
+        </div>
     </form>
 </div>
 

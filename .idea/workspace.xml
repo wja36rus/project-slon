@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2b8bc47-8692-4098-9d96-30dfff373489" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/download.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/diplom/RjxtDaQOCA.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/case/Diplom.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/case/fdiplom.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/diplom.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/fun/addDiplom.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/fun/addDocument.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/fun/saveDiplom.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redaktor/politic.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redaktor/case.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/case.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redaktor/fun/addCases.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/fun/addCases.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redaktor/fun/addNews.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/fun/addNews.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redaktor/fun/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/fun/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redaktor/fun/saveCases.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/fun/saveCases.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redaktor/fun/saveNews.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/fun/saveNews.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redaktor/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/diplom.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/diplom.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

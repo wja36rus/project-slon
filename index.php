@@ -784,7 +784,7 @@
                  success: function (response) {
                      $.map(response, function (elementOrValue, indexOrKey) {
 
-                         const cont = '<a class="card-href" href="">' +
+                         const cont = '<a class="card-href" href="news.php?news=' + elementOrValue.id + '">' +
                              '<div class="blog-card">' +
                              '<img src="images/news/' + elementOrValue.images + '" alt="" class="w-100">' +
                              '<p class="news-title">' + elementOrValue.title + '</p>' +
