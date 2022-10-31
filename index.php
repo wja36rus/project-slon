@@ -554,7 +554,7 @@
                         <small>
                             Нажимая на кнопку «Отправить», я соглашаюсь на обработку персональных данных в соответствии
                             с условиями и содержанием
-                            <a href="doc.docx" download="doc.docx">Политики конфиденциальности</a>
+                            <a href="download.pdf" download="Политика конфиденциальности.pdf">политики конфиденциальности</a>
                         </small>
                         <p id="error-bottom" class="text-center text-danger mb-0"></p>
                         <button id="btn-bottom-form" class="btn-hovers btn-form">ОТПРАВИТЬ</button>
