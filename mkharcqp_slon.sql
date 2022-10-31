@@ -29,13 +29,13 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cases` (
   `id` int NOT NULL,
-  `images` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `images` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `title` text NOT NULL,
   `subtitle` text NOT NULL,
   `text` text NOT NULL,
   `status` tinyint(1) NOT NULL,
   `order_by` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Дамп данных таблицы `cases`
@@ -85,7 +85,7 @@ CREATE TABLE `news` (
   `text` text NOT NULL,
   `status` tinyint(1) NOT NULL,
   `order_by` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Дамп данных таблицы `news`
