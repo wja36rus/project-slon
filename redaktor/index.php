@@ -20,6 +20,8 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/News.php";
         <div class="d-flex align-items-center ">
             <a href="index.php" class="btn btn-success active">Новости</a>
             <a href="case.php" class="btn btn-success ms-2">Случаи из практики</a>
+            <a href="politic.php" class="btn btn-success ms-2">Политика конфиденциальности</a>
+            <a href="diplom.php" class="btn btn-success ms-2">Дипломы</a>
             <a href="fun/exit.php" class="btn btn-danger ms-auto">Выход</a>
         </div>
     </div>
@@ -27,7 +29,7 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/News.php";
 <div class="container">
     <div class="card p-2 m-2">
         <h5>Добавить новость</h5>
-        <form action="fun/addNews.php" method="post">
+        <form action="fun/addNews.php" method="post" enctype="multipart/form-data">
             <div class="d-flex align-items-center mb-2">
                 <h5 class="w-25">Заголовок:</h5>
                 <input class="form-control ms-2" name="title" type="text">
@@ -42,10 +44,16 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/News.php";
                 <h5 class="w-25">Порядковый номер:</h5>
                 <input class="form-control ms-2" name="order_by" type="number" min="1">
             </div>
+
+            <div class="d-flex align-items-center mb-2">
+                <h5 class="w-25">Изображение:</h5>
+                <input class="form-control ms-2" name="images" type="file" accept="image/jpeg">
+            </div>
+
             <input type="submit" class="btn btn-warning" value="Добавить новость">
         </form>
     </div>
-    <form action="fun/saveNews.php" method="post">
+    <form action="fun/saveNews.php" method="post" enctype="multipart/form-data">
         <input type="submit" value="Сохранить" class="btn btn-primary">
         <?php
         $news = new News('all', true);
@@ -62,7 +70,9 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/News.php";
                 </div>
 
                 <div class="d-flex align-items-center mb-2">
-                    <h5 class="w-25">Номер по порядку: <?= $data[$is]["order_by"] ?></h5>
+                    <h5 class="w-25">Порядковый номер:</h5>
+                    <input class="form-control ms-2" name="order_by-<?= $data[$is]["id"] ?>" type="number" min="1"
+                           value="<?= $data[$is]["order_by"] ?>">
                 </div>
 
                 <div class="d-flex align-items-center mb-2">
@@ -91,6 +101,18 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/News.php";
                         ?>
 
                     </select>
+                </div>
+
+                <div class="d-flex align-items-center mb-2">
+                    <h5 class="w-25">Картинка:</h5>
+                    <div class="d-block">
+                        <div class="d-grid">
+                            <img style="width: 230px;" class="mb-2" src="../images/news/<?= $data[$is]["images"] ?>"
+                                 alt="">
+                            <p><?= $data[$is]["images"] ?></p>
+                        </div>
+                        <input class="form-control ms-2" name="images-<?= $data[$is]["id"] ?>" type="file" accept="image/jpeg"/>
+                    </div>
                 </div>
             </div>
         <?php endfor; ?>

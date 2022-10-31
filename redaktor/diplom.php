@@ -3,7 +3,7 @@ session_start();
 if (!$_SESSION["users_key"]) {
     header("Location: login.php");
 }
-include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Cases.php";
+include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Diplom.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -19,31 +19,18 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Cases.php";
     <div class="container ">
         <div class="d-flex align-items-center ">
             <a href="index.php" class="btn btn-success">Новости</a>
-            <a href="case.php" class="btn btn-success ms-2 active">Случаи из практики</a>
+            <a href="case.php" class="btn btn-success ms-2">Случаи из практики</a>
             <a href="politic.php" class="btn btn-success ms-2">Политика конфиденциальности</a>
-            <a href="diplom.php" class="btn btn-success ms-2 ">Дипломы</a>
+            <a href="diplom.php" class="btn btn-success ms-2 active">Дипломы</a>
             <a href="fun/exit.php" class="btn btn-danger ms-auto">Выход</a>
         </div>
     </div>
 </div>
 <div class="container">
     <div class="card p-2 m-2">
-        <h5>Добавить новость</h5>
-        <form action="fun/addCases.php" method="post" enctype="multipart/form-data">
-            <div class="d-flex align-items-center mb-2">
-                <h5 class="w-25">Заголовок:</h5>
-                <input class="form-control ms-2" name="title" type="text">
-            </div>
+        <h5>Добавить диплом</h5>
+        <form action="fun/addDiplom.php" method="post" enctype="multipart/form-data">
 
-            <div class="d-flex align-items-center mb-2">
-                <h5 class="w-25">Подзаголовок:</h5>
-                <input class="form-control ms-2" name="subtitle" type="text">
-            </div>
-
-            <div class="d-flex align-items-center mb-2">
-                <h5 class="w-25">Текст:</h5>
-                <textarea class="form-control ms-2" name="text"></textarea>
-            </div>
 
             <div class="d-flex align-items-center mb-2">
                 <h5 class="w-25">Порядковый номер:</h5>
@@ -55,14 +42,14 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Cases.php";
                 <input class="form-control ms-2" name="images" type="file" accept="image/jpeg">
             </div>
 
-            <input type="submit" class="btn btn-warning" value="Добавить случай">
+            <input type="submit" class="btn btn-warning" value="Добавить диплом">
         </form>
     </div>
-    <form action="fun/saveCases.php" method="post" enctype="multipart/form-data">
+    <form action="fun/saveDiplom.php" method="post" enctype="multipart/form-data">
         <input type="submit" value="Сохранить" class="btn btn-primary">
         <?php
-        $news = new Cases('all', true);
-        $data = $news->getCases("all", true);
+        $news = new Diplom();
+        $data = $news->getCases(true);
 
         for ($is = 0; $is < count($data); $is++):
             ?>
@@ -70,27 +57,14 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Cases.php";
 
                 <div class="d-flex align-items-center mb-2">
                     <h5 class="w-25">ID:</h5>
-                    <input class="form-control ms-2"  name="id-<?= $data[$is]["id"] ?>" type="text" value="<?= $data[$is]["id"] ?>">
+                    <input class="form-control ms-2" name="id-<?= $data[$is]["id"] ?>" type="text"
+                           value="<?= $data[$is]["id"] ?>">
                 </div>
 
                 <div class="d-flex align-items-center mb-2">
-                    <h5 class="w-25">Порядковый номер:</h5>
-                    <input class="form-control ms-2"  name="order_by-<?= $data[$is]["id"] ?>" type="number" min="1" value="<?= $data[$is]["order_by"] ?>">
-                </div>
-
-                <div class="d-flex align-items-center mb-2">
-                    <h5 class="w-25">Заголовок:</h5>
-                    <input class="form-control ms-2"  name="title-<?= $data[$is]["id"] ?>" type="text" value="<?= $data[$is]["title"] ?>">
-                </div>
-
-                <div class="d-flex align-items-center mb-2">
-                    <h5 class="w-25">Подзаголовок:</h5>
-                    <input class="form-control ms-2"  name="subtitle-<?= $data[$is]["id"] ?>" type="text" value="<?= $data[$is]["subtitle"] ?>">
-                </div>
-
-                <div class="d-flex align-items-center mb-2">
-                    <h5 class="w-25">Текст:</h5>
-                    <textarea class="form-control ms-2" name="text-<?= $data[$is]["id"]?>"><?= $data[$is]["text"] ?></textarea>
+                    <h5 class="w-25">Номер по порядку:</h5>
+                    <input class="form-control ms-2" name="order_by-<?= $data[$is]["order_by"] ?>" type="number"
+                           value="<?= $data[$is]["order_by"] ?>">
                 </div>
 
                 <div class="d-flex align-items-center mb-2">
@@ -113,7 +87,7 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Cases.php";
                     <h5 class="w-25">Картинка:</h5>
                     <div class="d-block">
                         <div class="d-grid">
-                            <img style="width: 230px;" class="mb-2" src="../images/cases/<?= $data[$is]["images"] ?>"
+                            <img style="width: 230px;" class="mb-2" src="../images/diplom/<?= $data[$is]["name"] ?>"
                                  alt="">
                             <p><?= $data[$is]["images"] ?></p>
                         </div>

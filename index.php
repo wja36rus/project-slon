@@ -359,27 +359,23 @@
         <div class="container pb-5">
             <div id="diploms" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/diplom/dip%20(1).jpg" class="d-block img-fluid ms-auto me-auto" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/diplom/dip%20(2).jpg" class="d-block img-fluid ms-auto me-auto" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/diplom/dip%20(3).jpg" class="d-block img-fluid ms-auto me-auto" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/diplom/dip%20(4).jpg" class="d-block img-fluid ms-auto me-auto" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/diplom/dip%20(5).jpg" class="d-block img-fluid ms-auto me-auto" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/diplom/dip%20(6).jpg" class="d-block img-fluid ms-auto me-auto" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/diplom/dip%20(7).jpg" class="d-block img-fluid ms-auto me-auto" alt="...">
-                    </div>
+                    <?php
+                    include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Diplom.php";
+                    $diplom = new Diplom();
+                    $data = $diplom->getCases();
+
+                    for ($i = 0; $i < count($data); $i++):
+                        if ($i === 0) : ?>
+                            <div class="carousel-item active">
+                                <img src="images/diplom/<?= $data[$i]["name"]; ?>"
+                                     class="d-block img-fluid ms-auto me-auto" alt="<?= $data[$i]["name"]; ?>">
+                            </div>
+                        <?php else: ?>
+                            <div class="carousel-item">
+                                <img src="images/diplom/<?= $data[$i]["name"]; ?>"
+                                     class="d-block img-fluid ms-auto me-auto" alt="<?= $data[$i]["name"]; ?>">
+                            </div>
+                        <?php endif; endfor; ?>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#diploms" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -710,17 +706,17 @@
                 $.map(response, function (elementOrValue, indexOrKey) {
 
                     const cont = '<div class="cases-card mb-5">' +
-                        '<img class="w-100" src="images/cases/cases.jpg" alt="">' +
-                        '<div class="cases-title">'+
-                            elementOrValue.title+
-                        '</div>'+
-                        '<div class="cases-text">'+
-                            '<p>'+
-                                elementOrValue.subtitle+
-                            '</p>'+
-                        '</div>'+
-                        '<a href="cases.php?case='+elementOrValue.id+'" class="btn-hovers btn-cases mt-2">Читать дальше</a>'+
-                    '</div>';
+                        '<img class="w-100" src="images/cases/' + elementOrValue.images + '" alt="">' +
+                        '<div class="cases-title">' +
+                        elementOrValue.title +
+                        '</div>' +
+                        '<div class="cases-text">' +
+                        '<p>' +
+                        elementOrValue.subtitle +
+                        '</p>' +
+                        '</div>' +
+                        '<a href="cases.php?case=' + elementOrValue.id + '" class="btn-hovers btn-cases mt-2">Читать дальше</a>' +
+                        '</div>';
 
                     $('.cases-wrap').append(cont);
                 });
@@ -734,42 +730,42 @@
             success: function (response) {
                 $.map(response, function (elementOrValue, indexOrKey) {
 
-                    const cont = '<a class="card-href" href="news.php?news='+elementOrValue.id+'">'+
-                        '<div class="blog-card">'+
-                            '<img src="images/news/news.jpg" alt="" class="w-100">'+
-                            '<p class="news-title">'+elementOrValue.title+'</p>'+
-                            '<p class="news-text mb-0">'+
-                                elementOrValue.text+
-                            '</p>'+
-                        '</div>'+
-                    '</a>';
+                    const cont = '<a class="card-href" href="news.php?news=' + elementOrValue.id + '">' +
+                        '<div class="blog-card">' +
+                        '<img src="images/news/' + elementOrValue.images + '" alt="" class="w-100">' +
+                        '<p class="news-title">' + elementOrValue.title + '</p>' +
+                        '<p class="news-text mb-0">' +
+                        elementOrValue.text +
+                        '</p>' +
+                        '</div>' +
+                        '</a>';
                     $('.news-wrap').append(cont);
                 });
             }
         });
 
-        $('#all-case').click(function (e) { 
+        $('#all-case').click(function (e) {
             e.preventDefault();
             $('.cases-wrap').empty();
-             $.ajax({
-            type: "GET",
-            url: "redaktor/case/fcases.php?type=all",
-            dataType: "json",
-            success: function (response) {
-                $.map(response, function (elementOrValue, indexOrKey) {
+            $.ajax({
+                type: "GET",
+                url: "redaktor/case/fcases.php?type=all",
+                dataType: "json",
+                success: function (response) {
+                    $.map(response, function (elementOrValue, indexOrKey) {
 
-                    const cont = '<div class="cases-card mb-5">'+
-                    '<img class="w-100" src="images/cases/cases.jpg" alt="">'+
-                        '<div class="cases-title">'+
-                            elementOrValue.title+
-                        '</div>'+
-                        '<div class="cases-text">'+
-                            '<p>'+
-                                elementOrValue.subtitle+
-                            '</p>'+
-                        '</div>'+
-                        '<a href="cases.php?case='+elementOrValue.id+'" class="btn-hovers btn-cases mt-2">Читать дальше</a>'+
-                    '</div>';
+                        const cont = '<div class="cases-card mb-5">' +
+                            '<img class="w-100" src="images/cases/' + elementOrValue.images + '" alt="">' +
+                            '<div class="cases-title">' +
+                            elementOrValue.title +
+                            '</div>' +
+                            '<div class="cases-text">' +
+                            '<p>' +
+                            elementOrValue.subtitle +
+                            '</p>' +
+                            '</div>' +
+                            '<a href="cases.php?case=' + elementOrValue.id + '" class="btn-hovers btn-cases mt-2">Читать дальше</a>' +
+                            '</div>';
 
                 
                     $('.cases-wrap').append(cont);
@@ -780,27 +776,27 @@
 
          $('#all-news').click(function (e) { 
             e.preventDefault();
-            $('.news-wrap').empty();
+             $('.news-wrap').empty();
              $.ajax({
-            type: "GET",
-            url: "redaktor/case/fnews.php?type=all",
-            dataType: "json",
-            success: function (response) {
-                $.map(response, function (elementOrValue, indexOrKey) {
+                 type: "GET",
+                 url: "redaktor/case/fnews.php?type=all",
+                 dataType: "json",
+                 success: function (response) {
+                     $.map(response, function (elementOrValue, indexOrKey) {
 
-                    const cont = '<a class="card-href" href="">'+
-                        '<div class="blog-card">'+
-                            '<img src="images/news/news.jpg" alt="" class="w-100">'+
-                            '<p class="news-title">'+elementOrValue.title+'</p>'+
-                            '<p class="news-text mb-0">'+
-                                elementOrValue.text+
-                            '</p>'+
-                        '</div>'+
-                    '</a>';
-                    $('.news-wrap').append(cont);
-                });
-            }
-        });
+                         const cont = '<a class="card-href" href="">' +
+                             '<div class="blog-card">' +
+                             '<img src="images/news/' + elementOrValue.images + '" alt="" class="w-100">' +
+                             '<p class="news-title">' + elementOrValue.title + '</p>' +
+                             '<p class="news-text mb-0">' +
+                             elementOrValue.text +
+                             '</p>' +
+                             '</div>' +
+                             '</a>';
+                         $('.news-wrap').append(cont);
+                     });
+                 }
+             });
         });
     });
 </script>

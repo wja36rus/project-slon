@@ -2,14 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2b8bc47-8692-4098-9d96-30dfff373489" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/download.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/diplom/RjxtDaQOCA.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/case/Diplom.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/case/fdiplom.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/diplom.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/fun/addDiplom.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/fun/addDocument.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/fun/saveDiplom.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/politic.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/case.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/case.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/fun/addCases.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/fun/addCases.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/fun/addNews.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/fun/addNews.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/fun/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/fun/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/fun/saveCases.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/fun/saveCases.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/fun/saveNews.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/fun/saveNews.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/index.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,28 +64,16 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\project-slon\redaktor\fun" />
-      <recent name="C:\OpenServer\domains\project-slon" />
-      <recent name="C:\OSPanel\domains\slon" />
-      <recent name="C:\OSPanel\domains\slon\redaktor\fun" />
-      <recent name="C:\OSPanel\domains\slon\redaktor\case" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\slon\redaktor" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\project-slon\redaktor\fun" />
+      <recent name="C:\OpenServer\domains\project-slon\redaktor" />
+      <recent name="C:\OpenServer\domains\project-slon\redaktor\case" />
+      <recent name="C:\OpenServer\domains\project-slon" />
+      <recent name="C:\OSPanel\domains\slon" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -101,6 +101,7 @@
       <workItem from="1666941068001" duration="2840000" />
       <workItem from="1666986123723" duration="8039000" />
       <workItem from="1667073433321" duration="2570000" />
+      <workItem from="1667244700733" duration="8122000" />
     </task>
     <servers />
   </component>
@@ -140,5 +141,13 @@
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2261" y="147" key="SettingsEditor/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1664652070702" />
+    <state x="2381" y="186" width="758" height="638" key="find.popup" timestamp="1667248047273">
+      <screen x="1920" y="0" width="1680" height="1010" />
+    </state>
+    <state x="2381" y="186" width="758" height="638" key="find.popup/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1667248047273" />
+    <state x="2416" y="233" key="run.anything.popup" timestamp="1667247983998">
+      <screen x="1920" y="0" width="1680" height="1010" />
+    </state>
+    <state x="2416" y="233" key="run.anything.popup/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1667247983998" />
   </component>
 </project>

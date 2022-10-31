@@ -1,6 +1,6 @@
 <?php
-include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Cases.php";
-$news = new Cases(false, true);
+include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Diplom.php";
+$news = new Diplom();
 
 function generateRandomString($length = 10)
 {
@@ -13,7 +13,7 @@ function generateRandomString($length = 10)
     return $randomString;
 }
 
-$uploaddir = $_SERVER["DOCUMENT_ROOT"] . "/images/cases/";
+$uploaddir = $_SERVER["DOCUMENT_ROOT"] . "/images/diplom/";
 $ex = explode('/', $_FILES["images"]["type"]);
 $type = $ex[1];
 $name = generateRandomString() . '.' . $type;
@@ -21,12 +21,8 @@ $uploadfile = $uploaddir . $name;
 
 move_uploaded_file($_FILES["images"]['tmp_name'], $uploadfile);
 
-$title = $_POST["title"];
-$subtitle = $_POST["subtitle"];
-$text = $_POST["text"];
 $order_by = $_POST["order_by"];
-$query = "INSERT INTO `cases`(`title`, `images`, `subtitle`, `text`, `status`, `order_by`) VALUES ('$title', '$name', '$subtitle','$text','1','$order_by');";
-
+$query = "INSERT INTO `diplom`(`name`, `status`, `order_by`) VALUES ('$name','1','$order_by');";
 $news->updateCases($query);
 
 header("Location: " . $_SERVER["HTTP_REFERER"]);

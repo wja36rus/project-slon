@@ -1,6 +1,6 @@
 <?php
-include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/News.php";
-$news = new News(false, true);
+include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Diplom.php";
+$news = new Diplom();
 
 function generateRandomString($length = 10)
 {
@@ -15,7 +15,7 @@ function generateRandomString($length = 10)
 
 foreach ($_FILES as $key => $value) {
     if ($_FILES[$key]["size"] > 0) {
-        $uploaddir = $_SERVER["DOCUMENT_ROOT"] . "/images/news/";
+        $uploaddir = $_SERVER["DOCUMENT_ROOT"] . "/images/diplom/";
         $ex = explode('/', $_FILES[$key]["type"]);
         $type = $ex[1];
         $name = generateRandomString() . '.' . $type;
@@ -25,7 +25,7 @@ foreach ($_FILES as $key => $value) {
 
         $exp = explode('-',$key);
         $id = $exp[1];
-        $query = "UPDATE `news` SET `images`='$name' WHERE `id` = '{$id}';";
+        $query = "UPDATE `diplom` SET `name`='$name' WHERE `id` = '{$id}';";
         $news->updateCases($query);
     }
 }
@@ -33,7 +33,7 @@ foreach ($_FILES as $key => $value) {
 foreach ($_POST as $key => $value) {
     $ex = explode('-',$key);
     if ($ex[0] !== "id") {
-        $query = "UPDATE `news` SET `{$ex[0]}`='$value' WHERE `id` = '{$ex[1]}';";
+        $query = "UPDATE `diplom` SET `{$ex[0]}`='$value' WHERE `id` = '{$ex[1]}';";
 
         $news->updateCases($query);
     }
