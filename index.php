@@ -396,136 +396,93 @@
         <div class="container pb-5">
             <div id="partners" class="carousel slide none991" data-bs-ride="carousel">
                 <div class="carousel-inner">
+                    <?php
+                    include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Partners.php";
+                    $partner = new Partners();
+                    $data = $partner->getCases(false, true);
+                    for ($i = 0; $i < count($data);$i++):
+                    if ($i == 0) :
+                    ?>
                     <div class="carousel-item active">
                         <div class="d-flex align-items-center">
-                            <div class="card-partner text-center">
-                                <img class="img-partner" src="images/partners/Group%2055.jpg" alt="">
-                                <p class="card-partner-title">
-                                    ООО «Компания Альфа-Снаб»
-                                </p>
-                                <a href="https://www.alfa-snab.com" class="card-partner-href">
-                                    https://www.alfa-snab.com
-                                </a>
+                            <?php else : ?>
+                            <div class="carousel-item">
+                                <div class="d-flex align-items-center">
+                                    <?php endif;
+                                    ?>
+                                    <?php
+                                    for ($is = 0; $is < count($data[$i]); $is++): ?>
+                                        <div class="card-partner text-center">
+                                            <img class="img-partner" src="images/partners/<?= $data[$i][$is]["images"] ?>" alt="">
+                                            <p class="card-partner-title">
+                                                <?= $data[$i][$is]["name"] ?>
+                                            </p>
+                                            <a href="<?= $data[$i][$is]["href"] ?>" class="card-partner-href">
+                                                <?= $data[$i][$is]["href"] ?>
+                                            </a>
+                                        </div>
+                                    <?php endfor; ?>
+                                </div>
                             </div>
-                            <div class="card-partner text-center">
-                                <img class="img-partner" src="images/partners/Group%2056.jpg" alt="">
-                                <p class="card-partner-title">
-                                    ООО «СКРЕПКИ»
-                                </p>
-                                <a href="https://skrepkivrn.ru/" class="card-partner-href">
-                                    https://skrepkivrn.ru/
-                                </a>
-                            </div>
-                            <div class="card-partner text-center">
-                                <img class="img-partner" src="images/partners/image%207.jpg" alt="">
-                                <p class="card-partner-title">
-                                    Студия дизайна интерьера и архитектурного проектирования «BUREInteriorstudio»
-                                </p>
-                                <a href="https://bure-studio.ru/" class="card-partner-href">
-                                    https://bure-studio.ru/
-                                </a>
-                            </div>
+                            <?php endfor; ?>
                         </div>
-                    </div>
 
-                    <div class="carousel-item">
-                        <div class="d-flex align-items-center">
-                            <div class="card-partner text-center">
-                                <img class="img-partner" src="images/partners/image%208.jpg" alt="">
-                                <p class="card-partner-title">
-                                    Рекламное агентство «DDDAgency»
-                                </p>
-                                <a href="https://ddd-agency.ru" class="card-partner-href">
-                                    https://ddd-agency.ru
-                                </a>
-                            </div>
-                            <div class="card-partner text-center">
-                                <img class="img-partner" src="images/partners/Group%2057.jpg" alt="">
-                                <p class="card-partner-title">
-                                    ООО «Бизнес Учет Налоги»
-                                </p>
-                            </div>
-                            <div class="card-partner text-center">
-                                <img class="img-partner" src="images/partners/Group%20141.jpg" alt="">
-                            </div>
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#partners" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#partners"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
                     </div>
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#partners" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#partners" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Следующий</span>
-                </button>
-            </div>
-            <div id="partnerss" class="carousel slide yes991" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card-partner text-center">
-                            <img class="img-partner" src="images/partners/Group%2055.jpg" alt="">
-                            <p class="card-partner-title">
-                                ООО «Компания Альфа-Снаб»
-                            </p>
-                            <a href="https://www.alfa-snab.com" class="card-partner-href">
-                                https://www.alfa-snab.com
-                            </a>
+                    <div id="partnerss" class="carousel slide yes991" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <?php
+                            $data = $partner->getCases();
+                            for ($is = 0; $is < count($data); $is++):
+                                if ($is === 0):
+                                    ?>
+                                    <div class="carousel-item active">
+                                        <div class="card-partner text-center">
+                                            <img class="img-partner" src="images/partners/<?= $data[$is]["images"] ?>"
+                                                 alt="">
+                                            <p class="card-partner-title">
+                                                <?= $data[$is]["name"] ?>
+                                            </p>
+                                            <a href="<?= $data[$is]["href"] ?>" class="card-partner-href">
+                                                <?= $data[$is]["href"] ?>
+                                            </a>
+                                        </div>
+                                    </div>
+                                <?php else: ?>
+                                    <div class="carousel-item">
+                                        <div class="card-partner text-center">
+                                            <img class="img-partner" src="images/partners/<?= $data[$is]["images"] ?>"
+                                                 alt="">
+                                            <p class="card-partner-title">
+                                                <?= $data[$is]["name"] ?>
+                                            </p>
+                                            <a href="<?= $data[$is]["href"] ?>" class="card-partner-href">
+                                                <?= $data[$is]["href"] ?>
+                                            </a>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+                            <?php endfor; ?>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card-partner text-center">
-                            <img class="img-partner" src="images/partners/Group%2056.jpg" alt="">
-                            <p class="card-partner-title">
-                                ООО «СКРЕПКИ»
-                            </p>
-                            <a href="https://skrepkivrn.ru/" class="card-partner-href">
-                                https://skrepkivrn.ru/
-                            </a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card-partner text-center">
-                            <img class="img-partner" src="images/partners/image%207.jpg" alt="">
-                            <p class="card-partner-title">
-                                Студия дизайна интерьера и архитектурного проектирования «BUREInteriorstudio»
-                            </p>
-                            <a href="https://bure-studio.ru/" class="card-partner-href">
-                                https://bure-studio.ru/
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card-partner text-center">
-                            <img class="img-partner" src="images/partners/image%208.jpg" alt="">
-                            <p class="card-partner-title">
-                                Рекламное агентство «DDDAgency»
-                            </p>
-                            <a href="https://ddd-agency.ru" class="card-partner-href">
-                                https://ddd-agency.ru
-                            </a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card-partner text-center">
-                            <img class="img-partner" src="images/partners/Group%2057.jpg" alt="">
-                            <p class="card-partner-title">
-                                ООО «Бизнес Учет Налоги»
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#partnerss" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#partnerss" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Следующий</span>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#partnerss"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#partnerss"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
                 </button>
             </div>
         </div>

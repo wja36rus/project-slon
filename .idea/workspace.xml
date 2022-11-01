@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2b8bc47-8692-4098-9d96-30dfff373489" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/redaktor/case/Partners.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/fun/addPartner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/fun/savePartner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/layout/nav.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redaktor/partners.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/partners/Group 141.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/partners/Group 55.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/partners/SOzBKacmif.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/partners/Group 56.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/partners/fGqcI7afJr.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/partners/Group 57.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/partners/bATSsDiPw8.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/partners/image 7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/partners/XIRajxh4vN.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/partners/image 8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/partners/gNBikJ4238.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/case.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/case.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redaktor/diplom.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/diplom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redaktor/politic.php" beforeDir="false" afterPath="$PROJECT_DIR$/redaktor/politic.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +62,16 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OSPanel\domains\slon\redaktor" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\project-slon\redaktor\fun" />
-      <recent name="C:\OpenServer\domains\project-slon\redaktor" />
       <recent name="C:\OpenServer\domains\project-slon\redaktor\case" />
+      <recent name="C:\OpenServer\domains\project-slon\redaktor" />
       <recent name="C:\OpenServer\domains\project-slon" />
       <recent name="C:\OSPanel\domains\slon" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\project-slon\images\partners" />
+      <recent name="C:\OSPanel\domains\slon\redaktor" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -86,6 +101,7 @@
       <workItem from="1666986123723" duration="8039000" />
       <workItem from="1667073433321" duration="2570000" />
       <workItem from="1667244700733" duration="8122000" />
+      <workItem from="1667331569615" duration="6272000" />
     </task>
     <servers />
   </component>
@@ -117,10 +133,10 @@
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2540" y="260" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1664909655656" />
-    <state x="2594" y="424" key="NewPhpFileDialog" timestamp="1666987851172">
+    <state x="2594" y="424" key="NewPhpFileDialog" timestamp="1667332389218">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
-    <state x="2594" y="424" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1666987851172" />
+    <state x="2594" y="424" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1667332389218" />
     <state x="2261" y="147" key="SettingsEditor" timestamp="1664652070702">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>

@@ -3,7 +3,7 @@ session_start();
 if (!$_SESSION["users_key"]) {
     header("Location: login.php");
 }
-include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Diplom.php";
+include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Partners.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -20,15 +20,15 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Diplom.php";
         <div class="d-flex align-items-center ">
             <?php
             include $_SERVER["DOCUMENT_ROOT"]."/redaktor/layout/nav.php";
-            nav(4);
+            nav(5);
             ?>
         </div>
     </div>
 </div>
 <div class="container">
     <div class="card p-2 m-2">
-        <h5>Добавить диплом</h5>
-        <form action="fun/addDiplom.php" method="post" enctype="multipart/form-data">
+        <h5>Добавить партнера</h5>
+        <form action="fun/addPartner.php" method="post" enctype="multipart/form-data">
 
 
             <div class="d-flex align-items-center mb-2">
@@ -37,23 +37,33 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Diplom.php";
             </div>
 
             <div class="d-flex align-items-center mb-2">
+                <h5 class="w-25">Название:</h5>
+                <input class="form-control ms-2" name="name" type="text">
+            </div>
+
+            <div class="d-flex align-items-center mb-2">
+                <h5 class="w-25">Ссылка:</h5>
+                <input class="form-control ms-2" name="href" type="text">
+            </div>
+
+            <div class="d-flex align-items-center mb-2">
                 <h5 class="w-25">Изображение:</h5>
                 <input class="form-control ms-2" name="images" type="file" accept="image/jpeg">
             </div>
 
-            <input type="submit" class="btn btn-warning" value="Добавить диплом">
+            <input type="submit" class="btn btn-warning" value="Добавить партнера">
         </form>
     </div>
-    <form action="fun/saveDiplom.php" method="post" enctype="multipart/form-data">
+    <form action="fun/savePartner.php" method="post" enctype="multipart/form-data">
         <input type="submit" value="Сохранить" class="btn btn-primary">
         <div class="d-flex align-items-center flex-wrap">
             <?php
-            $news = new Diplom();
+            $news = new Partners();
             $data = $news->getCases(true);
 
             for ($is = 0; $is < count($data); $is++):
                 ?>
-                <div class="card p-2 m-2" style="width: 48.5%; height: 30rem">
+                <div class="card p-2 m-2" style="width: 48.5%; height: 35rem">
 
                     <div class="d-flex align-items-center mb-2">
                         <h5 class="w-25">ID:</h5>
@@ -65,6 +75,18 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Diplom.php";
                         <h5 class="w-25">Номер по порядку:</h5>
                         <input class="form-control ms-2" name="order_by-<?= $data[$is]["id"] ?>" type="number"
                                value="<?= $data[$is]["order_by"] ?>">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                        <h5 class="w-25">Название :</h5>
+                        <input class="form-control ms-2" name="name-<?= $data[$is]["id"] ?>" type="text"
+                               value="<?= $data[$is]["name"] ?>">
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                        <h5 class="w-25">Ссылка :</h5>
+                        <input class="form-control ms-2" name="href-<?= $data[$is]["id"] ?>" type="text"
+                               value="<?= $data[$is]["href"] ?>">
                     </div>
 
                     <div class="d-flex align-items-center mb-2">
@@ -88,7 +110,7 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Diplom.php";
                         <div class="d-block">
                             <input class="form-control ms-2 mb-2" name="images-<?= $data[$is]["id"] ?>" type="file" accept="image/jpeg"/>
                             <div class="d-grid">
-                                <img style="height: 250px;" class="mb-2" src="../images/diplom/<?= $data[$is]["name"] ?>"
+                                <img style="height: 220px;" class="mb-2" src="../images/partners/<?= $data[$is]["images"] ?>"
                                      alt="">
                                 <p><?= $data[$is]["images"] ?></p>
                             </div>

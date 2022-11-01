@@ -18,11 +18,10 @@ include $_SERVER["DOCUMENT_ROOT"] . "/redaktor/case/Cases.php";
 <div class="pt-2 pb-2 shadow">
     <div class="container ">
         <div class="d-flex align-items-center ">
-            <a href="index.php" class="btn btn-success">Новости</a>
-            <a href="case.php" class="btn btn-success ms-2 active">Случаи из практики</a>
-            <a href="politic.php" class="btn btn-success ms-2">Политика конфиденциальности</a>
-            <a href="diplom.php" class="btn btn-success ms-2 ">Дипломы</a>
-            <a href="fun/exit.php" class="btn btn-danger ms-auto">Выход</a>
+            <?php
+            include $_SERVER["DOCUMENT_ROOT"]."/redaktor/layout/nav.php";
+            nav(2);
+            ?>
         </div>
     </div>
 </div>
